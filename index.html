@@ -206,6 +206,17 @@ p { color: var(--muted); max-width: 62ch; }
 .tg-btns span { background: rgba(43,82,120,.55); color: #fff; font-size: .7rem; text-align: center; padding: .5rem .3rem; border-radius: 8px; }
 .tg-btns span.full { grid-column: span 2; }
 
+.case + .case { margin-top: 1.2rem; }
+.site-shot {
+  display: block; border: 1px solid #34343A; border-radius: 16px; overflow: hidden; background: #0E0E10;
+  box-shadow: 0 40px 80px -30px rgba(0,0,0,.8), 0 0 0 6px #141416;
+  transform: rotate(-1.5deg); transition: transform .6s var(--ease);
+}
+.case:hover .site-shot, .site-shot:focus-visible { transform: rotate(0deg) translateY(-6px); }
+.site-shot .browser-bar { align-items: center; background: #141416; }
+.site-shot .browser-bar span { margin-left: .6rem; font-size: .72rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.site-shot img { width: 100%; height: auto; }
+
 .next-case {
   margin-top: 1.2rem; border: 1px dashed #3A3A40; border-radius: var(--radius);
   padding: clamp(1.6rem, 1rem + 2vw, 2.6rem); display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap;
@@ -270,7 +281,7 @@ p { color: var(--muted); max-width: 62ch; }
   .service:first-child { grid-row: auto; }
   .steps { grid-template-columns: 1fr 1fr; gap: 2.4rem 1.2rem; }
   .channels { grid-template-columns: 1fr 1fr; }
-  .phone { transform: none; }
+  .phone, .site-shot { transform: none; }
 }
 @media (max-width: 720px) {
   .nav a:not(.btn) { display: none; }
@@ -426,6 +437,72 @@ p { color: var(--muted); max-width: 62ch; }
         </div>
       </article>
 
+      <article class="case reveal">
+        <div>
+          <span class="case-tag">Сайт · Кофейня 19</span>
+          <h3>Сайт кофейни с собственной обжаркой</h3>
+          <p>Тёплый сайт-визитка для небольшой кофейни в Гусь-Хрустальном: атмосфера заведения, меню с ценами, фотографии интерьера и отзывы гостей.</p>
+          <ul class="case-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Меню с ценами и фотографии</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Отзывы гостей и рейтинг</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Адрес, карта и звонок в одно касание</li>
+          </ul>
+          <a href="https://workstudio-takpol.github.io/kofeinya-19/" class="btn btn-ghost" target="_blank" rel="noopener">
+            Открыть сайт
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <a class="site-shot" href="https://workstudio-takpol.github.io/kofeinya-19/" target="_blank" rel="noopener" aria-label="Открыть сайт «Кофейня 19»">
+          <div class="browser-bar"><i></i><i></i><i></i><span>workstudio-takpol.github.io/kofeinya-19</span></div>
+          <img src="assets/img/kofeinya-19.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Главная страница сайта «Кофейня 19»">
+        </a>
+      </article>
+
+      <article class="case reveal">
+        <div>
+          <span class="case-tag">Сайт · CYBER DOGG</span>
+          <h3>Сайт компьютерного клуба</h3>
+          <p>Яркий сайт в киберпанк-стиле для круглосуточного компьютерного клуба: зоны и железо, тарифы, кухня клуба и калькулятор стоимости игры.</p>
+          <ul class="case-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Зоны, характеристики ПК и цены</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Меню кухни и отзывы</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Калькулятор цены, бронь по телефону и карта</li>
+          </ul>
+          <a href="https://workstudio-takpol.github.io/cyber-dogg/" class="btn btn-ghost" target="_blank" rel="noopener">
+            Открыть сайт
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <a class="site-shot" href="https://workstudio-takpol.github.io/cyber-dogg/" target="_blank" rel="noopener" aria-label="Открыть сайт «CYBER DOGG»">
+          <div class="browser-bar"><i></i><i></i><i></i><span>workstudio-takpol.github.io/cyber-dogg</span></div>
+          <img src="assets/img/cyber-dogg.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Главная страница сайта «CYBER DOGG»">
+        </a>
+      </article>
+
+      <article class="case reveal">
+        <div>
+          <span class="case-tag">Сайт · Агнифуд</span>
+          <h3>Сайт шаурмечной и гриль-кафе</h3>
+          <p>Сочный и дерзкий сайт для гриль-кафе в центре города: меню с ценами, статус «открыто / закрыто» в реальном времени, отзывы и как добраться.</p>
+          <ul class="case-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Меню с ценами по категориям</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Часы работы и статус «открыто сейчас»</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Заказ по телефону и карта</li>
+          </ul>
+          <a href="https://workstudio-takpol.github.io/agnifood/" class="btn btn-ghost" target="_blank" rel="noopener">
+            Открыть сайт
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <a class="site-shot" href="https://workstudio-takpol.github.io/agnifood/" target="_blank" rel="noopener" aria-label="Открыть сайт «Агнифуд»">
+          <div class="browser-bar"><i></i><i></i><i></i><span>workstudio-takpol.github.io/agnifood</span></div>
+          <img src="assets/img/agnifood.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Главная страница сайта «Агнифуд»">
+        </a>
+      </article>
+
       <div class="next-case reveal">
         <div>
           <h3>Здесь может быть ваш проект</h3>
@@ -464,7 +541,7 @@ p { color: var(--muted); max-width: 62ch; }
       </div>
       <div class="about-text">
         <p class="reveal">Сам продумываю план, структуру и логику проекта, а в реализации опираюсь на документацию, готовые инструменты и проверенные интернет-ресурсы — так получается быстрее и надёжнее. Работаю напрямую, без посредников, поэтому предлагаю доступную стоимость.</p>
-        <p class="reveal" style="--d:.08s">Сейчас я формирую портфолио, поэтому внимательно отношусь к каждому проекту. Этот сайт и Telegram-бот разработаны и запущены мной.</p>
+        <p class="reveal" style="--d:.08s">Сейчас я формирую портфолио, поэтому внимательно отношусь к каждому проекту. Все проекты из раздела «Работы» — этот сайт, Telegram-бот и сайты для заведений — разработаны и запущены мной.</p>
         <div class="perks">
           <div class="perk reveal"><b>Быстрый старт</b><span>Обсуждаем задачу в Telegram, без долгих брифов.</span></div>
           <div class="perk reveal" style="--d:.08s"><b>Выгодные условия</b><span>Специальные условия для первых клиентов.</span></div>
